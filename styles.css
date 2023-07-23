@@ -1,135 +1,166 @@
-body{
-  margin: 0; /*making it touch all 4 sides*/
-  text-align: center;
-  font-family: 'Lobster', sans-serif;
-}
-h1{
-  color:#8e1984;
-  font-family: 'Cedarville Cursive', cursive;
-  font-size: 5.625rem;
-  margin: 50px auto 0 auto;
-}
-h2{
-  color:#5a4992;
-  font-family: 'Lobster', sans-serif;
-  font-size: 2.5rem;
-  font-weight: normal;
-  margin-bottom: 0px;
-}
-h3{
-  color:#FFFFFF;
-  font-family: 'Lobster', sans-serif;
-  text-align: left;
-
-}
-a{
-  color:#11999E;
-  font-family: 'Lobster', sans-serif;
-  margin:30px;
-  text-decoration: none;
-}
-a:hover{
-  color:#EAF6F6;
-}
-hr{
-  border-style: dotted;
-  border-bottom-style: none;
-  border-color: #EAF6F6;
-  border-width: 10px; /* change dot size of border*/
-  margin: 100px auto;
-  width: 5%; /*length of border*/
-}
-.top-container{
-  background-color: #f0d3b3;
-  padding-top: 80px;
-  padding-bottom: 80px; 
-  position: relative;
-}
-.top-cloud{
-  position: absolute;
-  right:400px;
-  top:150px;
-}
-.bottom-cloud{
-  position: absolute;
-  left:300px;
-  bottom:300px;
-}
-.middle-container{
-background-color: #dd6cae
-
-}
-.intro{
-  width:50%;
-  text-align: left;
-
-}
-.profile{
-  width: 50%;
-  margin: auto;
-  padding-top: 50px;
-}
-.skincare-img{
-  width: 150px;
-  border-radius: 50%;
-  float: right;
-}
-.shop-row{
-  /* This won't work as element does not have 100% width: text-align: center;Hence margin used instead*/
-  margin: 100px auto;
-  width: 50%;
-  text-align: left;
-  /*line-height:2; /*doubling line height*/
-}
-.makeup-img{
-  width: 150px;
-  float: left;
-  margin-right:70px;
-  border-radius: 50%;
-}
-.haircare-img{
-  width: 150px;
-  float: right;
-  margin-right:70px;
-  border-radius: 50%;
-}
-p{
-  color:#FFFFFF;
-  line-height: 2;
-  text-align: left;
-
-}
-.btn {
-  background:  #6bb2ec;
-  background-image: -webkit-linear-gradient(top,  #11cdd4, #11999e);
-  background-image: -moz-linear-gradient(top,  #11cdd4, #11999e);
-  background-image: -ms-linear-gradient(top,  #11cdd4, #11999e);
-  background-image: -o-linear-gradient(top,  #11cdd4, #11999e);
-  background-image: linear-gradient(to bottom,  #11cdd4, #11999e);
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 8px;
+body {
   font-family: 'Montserrat', sans-serif;
-  color: #000000;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
+  text-align: center;
 }
-.btn:hover {
-  background: #ee3ba4;
-  background-image: -webkit-linear-gradient(top, #ee3ba4, #ee3ba4);
-  background-image: -moz-linear-gradient(top, #ee3ba4, #ee3ba4);
-  background-image: -moz-linear-gradient(top, #ee3ba4, #ee3ba4);
-  background-image: -ms-linear-gradient(top, #ee3ba4, #ee3ba4);
-  background-image: -o-linear-gradient(top, #ee3ba4, #ee3ba4);
-  background-image: linear-gradient(to bottom, #ee3ba4, #ee3ba4);
-  text-decoration: none;
+
+h1, h2, h3, h5, h4 {
+  font-family: 'Montserrat';
+  font-weight: 900;
 }
-.contact-me{
-  padding-bottom:10px;
+
+h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 1.5rem;
 }
-.bottom-container{
-  background-color: #41494e;
-  /*margin-top: 50px;
-  padding-top: 50px;*/
+
+p {
+  color: #1f1178;
 }
+
+/* Headings */
+.big-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Sections */
+.colored-section {
+  background-color: #1c5557;
+  color: white;
+}
+
+.white-section {
+  background-color: #8bd8e2;
+}
+
+/* Navbar CSS */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu';
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Montserrat'
+}
+
+/* Download Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Section */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+/* Title Image */
+.title-image {
+  width: 13%;
+  position: absolute;
+  right: 20%;
+  /*Parent tag is div, moves 30% to right of div*/
+  border-radius: 50%;
+  /*circle img*/
+}
+
+/* Skills Section */
+#skills {
+  position: relative;
+  z-index: 1;
+}
+
+.skills-title {
+  font-size: 1.5rem;
+}
+
+.skills-col {
+  padding: 5%;
+}
+
+.icon {
+  color: #430f58;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* Achievements Section */
+#achievements {
+  background-color: #4d787e;
+}
+
+.achievements-heading {
+  font-family: 'Montserrat';
+  font-weight: 900;
+  color: rgb(243, 236, 236);
+  font-size: 2.5rem;
+}
+
+.achievements-text {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: rgb(20, 20, 47);
+  text-align: left;
+  font-family: Ubuntu;
+}
+
+.achievements-image {
+  width: 22%;
+  border-radius: 15%;
+  margin: 20px;
+}
+
+/* Education Section */
+#education {
+  padding: 100px;
+}
+
+.education-column {
+  padding: 3% 2%;
+}
+
+.education-text {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+@media (max-width:1028px) {
+  .title-image {
+    position: static;
+    width: 50%;
+    transform: rotate(0);
+  }
+
+  #title {
+    text-align: center;
+  }
+}
+
+/* Resume section */
+/* footer section */
